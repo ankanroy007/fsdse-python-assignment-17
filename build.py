@@ -2,8 +2,11 @@ import operator
 
 
 def solution_asc(dic):
-    dic.items().sort
-    return dic.items()
+    '''dic.items().sort
+    return dic.items()'''
+
+    ascDic = sorted(dic.items(),key = operator.itemgetter(2))
+    print ascDic
 
 
 def solution_desc(dic):
